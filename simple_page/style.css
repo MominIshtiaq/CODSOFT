@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  padding-bottom: 6.74rem;
+  box-sizing: inherit;
+}
+
+/* Header Style */
+.header {
+  height: 100px;
+  width: 100%;
+  background: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4%;
+}
+
+.header .nav-logo {
+  color: #f9faf8;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.header .nav-item ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  list-style: none;
+}
+
+.header .nav-item ul li a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.header .nav-item ul li a:hover {
+  border-bottom: 2px solid #e5e7eb;
+}
+
+/* Top Style */
+.main-top {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8%;
+  background: #1f2937;
+}
+
+.main-top .content .hero-main {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+  letter-spacing: -1.2px;
+}
+
+.main-top .content .hero-sub {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin: 15px 0;
+}
+
+.main-top .content .btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f9faf8;
+  background: #3882f6;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.main-top .content .btn:hover {
+  border-color: #3882f6;
+  color: #3882f6;
+  background: transparent;
+}
+
+.main-top .image {
+  background: red;
+  height: 15rem;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  filter: brightness(0.5);
+  transition: 0.6s ease;
+}
+
+.main-top .image p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.main-top .image:hover {
+  filter: brightness(1);
+}
+
+/* Cards Style */
+.cards {
+  margin: 3rem;
+}
+
+.cards .card-heading {
+  font-size: 32px;
+  font-weight: bolder;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 150px;
+}
+
+.main-cards .card img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #1f2937;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+
+.main-cards .card p {
+  text-align: center;
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 7px;
+}
+
+.card:hover {
+  p {
+    opacity: 1 !important;
+  }
+
+  img {
+    transform: scale(1.1);
+  }
+}
+
+/* Quote Main Style */
+.quote {
+  width: 100%;
+  height: 60vh;
+  background: #c9caca;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 8%;
+}
+
+.quote .quote_text {
+  width: 55%;
+  text-align: center;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: #1f2937;
+}
+
+.quote .quote_from {
+  margin-top: 2rem;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Call to Action Style */
+.call_to_action {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action {
+  width: 60%;
+  height: 30%;
+  background: #3882f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  border-radius: 6px;
+}
+
+.action .action_call {
+  color: #fff;
+}
+
+.action .action_btn .btn {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f9faf8;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.action .action_btn .btn:hover {
+  background: #fff;
+  color: #3882f6;
+}
+
+/* Footer Style */
+.footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  font-size: 18px;
+  padding: 35px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
